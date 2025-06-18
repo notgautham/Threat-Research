@@ -1,0 +1,4 @@
+name,url,format
+Stamparm Ipsum,https://raw.githubusercontent.com/stamparm/ipsum/master/ipsum.txt,txt
+SSLBL,https://sslbl.abuse.ch/blacklist/sslblacklist.csv,csv
+AlienVault,http://reputation.alienvault.com/reputation.generic.gz,gz
