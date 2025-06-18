@@ -52,16 +52,22 @@ This creates a `blacklist_ips.tch` file where:
 
 ## View Stored Entries
 
-View the first 50 IPs:
+### View the first 50 keys (IPs):
 
 ```bash
 tchmgr list blacklist_ips.tch | head -n 50
 ```
 
-View value of a specific IP:
+### View value for a specific IP:
 
 ```bash
 tchmgr get blacklist_ips.tch <ip-address>
+```
+
+### View the first 50 keys with their values:
+
+```bash
+tchmgr list blacklist_ips.tch | head -n 50 | while read ip; do echo "$ip -> $(tchmgr get blacklist_ips.tch $ip)"; done
 ```
 
 ---
@@ -72,3 +78,4 @@ tchmgr get blacklist_ips.tch <ip-address>
 * `blacklist_ips.tch` – Tokyo Cabinet database storing key-value entries
 
 ---
+
